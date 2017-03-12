@@ -32,11 +32,11 @@
   - Add the following text `grader ALL=(ALL:ALL) ALL`
 
 7. Create an SSH key pair for grader using the ssh-keygen tool
-  -mkdir .ssh
-  -touch .ssh/authorized_keys
-  -nano .ssh/authorized_keys - Copy local ssh key to this file
-  -chmod 700 .ssh
-  -chmod 644 .ssh/authorized_keys
+  - `mkdir .ssh`
+  - `touch .ssh/authorized_keys`
+  - `nano .ssh/authorized_keys - Copy local ssh key to this file`
+  - `chmod 700 .ssh`
+  - `chmod 644 .ssh/authorized_keys`
 
 8. Configure the local timezone to UTC
   - Run `sudo dpkg-reconfigure tzdata` and then choose UTC
@@ -95,6 +95,7 @@ from catalog import app as application
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+
 
 13. Install and configure PostgreSQL:
   - `sudo apt-get install postgresql postgresql-contrib`
